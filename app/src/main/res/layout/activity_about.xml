@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.david.assignment.AboutActivity"
+    android:background="@color/backgroundBlack">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/directions_button"
+        android:text="@string/locations_button"
+        android:textSize="@dimen/button_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/buttonBlue"
+        android:textColor="@color/textWhite"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quiz_button"
+        android:text="@string/quiz_button"
+        android:textSize="@dimen/button_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/buttonBlue"
+        android:textColor="@color/textWhite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_text2"
+        android:text="@string/about_text2"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textWhite"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/directions_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="@dimen/about_image_width"
+        android:layout_height="@dimen/about_image_height"
+        android:id="@+id/topgear_image"
+        android:src="@drawable/topgear"
+        android:layout_above="@+id/about_text2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp" />
+
+    <ImageView
+        android:layout_width="@dimen/about_image_width"
+        android:layout_height="@dimen/about_image_height"
+        android:id="@+id/peter_kay_image"
+        android:src="@drawable/peterkay"
+        android:layout_alignTop="@+id/topgear_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_text"
+        android:text="@string/about_text"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textWhite"
+        android:layout_above="@+id/topgear_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_button"
+        android:text="@string/home_button"
+        android:textSize="@dimen/button_size"
+        android:background="@color/buttonBlue"
+        android:textColor="@color/textWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_title"
+        android:text="@string/about_title"
+        android:textColor="@color/titleColour"
+        android:textSize="@dimen/title_size"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+</RelativeLayout>
